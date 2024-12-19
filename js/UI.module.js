@@ -72,7 +72,7 @@ export class Ui {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      console.log(result);
+      
       document.querySelector(".details").innerHTML = `
         <div class="col-md-4    col-sm-12">
            <img class='w-100'  src="${result.thumbnail}" alt="" />
