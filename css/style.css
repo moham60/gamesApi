@@ -1,0 +1,124 @@
+
+
+/* Total scrollbar width */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px; /* For horizontal scrollbars */
+  }
+  
+  /* Background of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  background: #4e4c4c;
+  border-radius: 5px;
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  
+/**/
+.animation{
+    top: 60%;
+}
+p{
+    line-break: anywhere;
+}
+@keyframes rotate{
+
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/****nav*****/
+
+header img{
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+nav .container{
+    background-color: #3A497B;
+}
+.navbar{
+    --bs-navbar-active-color:rgb(68, 197, 248);
+}
+.navbar-nav{
+    --bs-nav-link-color:white;
+    --bs-nav-link-hover-color:rgb(68, 197, 248);
+}
+nav .container img{
+    width: 50px;
+}
+/*******/
+/**Game cards**/
+.card{
+    position: relative;
+    background-color: rgb(39, 43, 48);
+    transition: 0.7s;
+    border-radius: 10px;
+    border: 1px solid #19191a5d;
+   
+}
+
+.card img{
+    filter: grayscale(70%);
+    transition: 0.7s;
+    
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.card:hover img{
+    filter: grayscale(0%);
+}
+.game .card .info p {
+    color: #888;
+    
+}
+.game .card .info{
+   flex: 1 1 auto;
+}
+
+.game .card .footer span{
+    font-size: 10px;
+}
+.games .Card{
+    width: 100%;
+}
+@media (min-width:468px){
+    .games .Card{
+        width: 50%;
+    }
+}
+@media (min-width:768px){
+    .games .Card{
+        width: 33.3333%;
+    }
+}
+@media (min-width:992px){
+    .games .Card{
+        width: 25%;
+    }
+}
+
+
+/*****/
+
+/***details game*/
+.close{
+    cursor: pointer;
+}
+/******/

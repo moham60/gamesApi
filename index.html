@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!--bootsrtap style-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--fontawsome-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+
+  <body class="bg-dark">
+    <header class="">
+      <img src="./images/wraper.png" class="w-100" alt="" />
+    </header>
+    <nav class="navbar position-sticky top-0 z-2 navbar-expand-lg mb-2">
+      <div class="container rounded-4 py-1 text-white">
+        <a
+          class="navbar-brand text-white fs-3 d-flex align-items-center text-uppercase"
+          href="#"
+          ><img class="me-2" src="./images/logo-sm.png" alt="" />Game Reviews</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarScroll">
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                role="button"
+                >mmorpg</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                role="button"
+                >shooter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                role="button"
+                >sailing</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                role="button"
+                >permadeath</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                role="button"
+                >superhero</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase"
+                aria-current="page"
+                role="button">
+                pixel</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img
+      class="position-absolute translate-middle start-50 z-2 d-none animation"
+      src="./images/Animation - 1734549549155.gif"
+      alt="" />
+    <main>
+      <section class="game p-3">
+        <div class="container">
+          <div class="games row g-5"></div>
+        </div>
+      </section>
+      <section class="gameDetails d-none text-white py-5">
+        <div class="container position-relative">
+          <h3 class="mb-4">Details Game</h3>
+          <span
+            class="position-absolute btn-close btn-close-white close end-0 top-0"></span>
+          <div class="details row g-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
