@@ -12,10 +12,10 @@ let details = new gameDetails();
 
 let links = document.querySelectorAll(".nav-link");
 /**change games displayed when click to specific card and return new cards element */
-links.forEach((e) => {
+links.forEach((e,index) => {
   e.addEventListener("click", async function () {
     cards = await game.addsectionGame(e.textContent.trim());
-    deleteActive();
+    deleteActive(index);
     getCard();
   });
 });
